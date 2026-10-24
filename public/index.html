@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskTrack - My Tasks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>TaskTrack</h1>
+        <p class="subtitle">Organize your day, one task at a time.</p>
+
+        <form id="taskForm">
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="Enter a new task..."
+                required
+            >
+            <button type="submit">Add Task</button>
+        </form>
+<div class="task-stats">
+    <p>Total Tasks: <span id="totalTasks">0</span></p>
+    <p>Pending: <span id="pendingTasks">0</span></p>
+    <p>Completed: <span id="completedTasks">0</span></p>
+</div>
+        <p id="message"></p>
+        <ul id="taskList"></ul>
+<p id="emptyMessage" style="display: none;">
+    No tasks yet! Add your first task to get started.
+</p>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
